@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reem Hussain Alasfoor — Data Scientist &amp; Mathematician</title>
+<meta name="description" content="Data scientist and mathematician turning abstract mathematics into visual, data-driven solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e2326;--panel:#143034;--line:#2a4a4d;--text:#eaf1ee;--mute:#9db5b2;--axis:#e8c547;--blue:#6b95ff;--red:#f0716f;--r:6px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:400 1.05rem/1.65 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.15}
+a{color:var(--axis)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--axis);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;background:#0e2326ee;border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px;gap:16px;flex-wrap:wrap}
+nav b{font-family:Fraunces,serif;font-size:1.1rem}
+nav ul{display:flex;gap:22px;list-style:none;padding:0}
+nav ul a{color:var(--mute);text-decoration:none;font-size:.95rem}
+nav ul a:hover{color:var(--text)}
+section{padding:84px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:12px}
+.lead{color:var(--mute);max-width:60ch;margin-bottom:36px}
+.hero{border:0;padding:90px 0 80px;background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/48px 48px}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.hero small{color:var(--axis);font-weight:500}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);margin:10px 0 20px}
+.hero p{max-width:46ch;color:#cfe0dc;margin-bottom:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:var(--r);background:var(--axis);color:#0e2326;font-weight:700;text-decoration:none}
+.btn.alt{background:none;border:1px solid var(--mute);color:var(--text);margin-left:10px}
+.hero svg{width:100%;height:auto;background:#0e2326cc;border:1px solid var(--line);border-radius:var(--r)}
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:48px}
+.about p+p{margin-top:16px}
+.cert{border-left:3px solid var(--axis);padding:4px 0 4px 16px;margin-bottom:22px}
+.cert b{display:block}.cert span{color:var(--mute);font-size:.95rem}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 48px}
+.skills h3{font-size:1.1rem;margin-bottom:10px;color:var(--axis)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.chips li{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:3px 13px;font-size:.88rem}
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center;padding:44px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.proj:nth-of-type(even) .shots{order:2}
+.shots{display:grid;gap:10px}
+.shots img{width:100%;display:block;border-radius:var(--r);border:1px solid var(--line)}
+.shots.two{grid-template-columns:1fr 1fr}
+.date{color:var(--mute);font-size:.9rem}
+.proj h3{font-size:1.7rem;margin:4px 0 10px}
+.proj p{color:#cfe0dc;margin-bottom:14px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tags span{font-size:.82rem;padding:2px 10px;border-radius:var(--r);background:#6b95ff22;color:var(--blue)}
+.tags span:nth-child(2n){background:#f0716f22;color:var(--red)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery figure{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.gallery figcaption{padding:12px 14px;font-size:.92rem;color:var(--mute)}
+.contact a{display:inline-block;margin:0 18px 8px 0}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+@media(max-width:820px){.hero .wrap,.about,.proj,.skills{grid-template-columns:1fr}.proj:nth-of-type(even) .shots{order:0}.gallery{grid-template-columns:1fr}nav ul{gap:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Reem Alasfoor</b>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#visuals">3D visuals</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<small>Data Scientist — Mathematics</small>
+<h1>Reem Hussain Alasfoor</h1>
+<p>I turn abstract mathematics into visual, data-driven solutions, from statistical models to hand-animated 3D vector proofs.</p>
+<a class="btn" href="#projects">View my work</a><a class="btn alt" href="#contact">Contact me</a>
+</div>
+<svg viewBox="0 0 320 240" role="img" aria-label="Two vectors adding up to a third vector on a coordinate grid">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="context-stroke"/></marker></defs>
+<g stroke="#e8c547" stroke-width="2"><path d="M30 210H300"/><path d="M30 210V20"/></g>
+<g stroke-width="4" marker-end="url(#a)" fill="none"><path d="M30 210L150 150" stroke="#6b95ff"/><path d="M150 150L250 60" stroke="#f0716f"/><path d="M30 210L250 60" stroke="#e8c547" stroke-dasharray="6 6" stroke-width="3"/></g>
+<text x="62" y="162" fill="#6b95ff" font-size="15">u</text><text x="215" y="118" fill="#f0716f" font-size="15">v</text><text x="110" y="120" fill="#e8c547" font-size="15">u + v</text>
+</svg>
+</div></header>
+
+<section id="about"><div class="wrap about">
+<div>
+<h2>A mathematician who builds with data</h2>
+<p>I'm completing a <b>BSc in Mathematics at the University of Bahrain</b>, with a foundation spanning linear algebra, real analysis, and graph theory. Alongside my degree, I recently finished the <b>General Assembly Data Science Bootcamp</b>, where I built out the practical side of that foundation: Python, statistical modeling, and machine learning applied to real problems.</p>
+<p>What sets my approach apart is a background in <b>3D spatial visualization</b>. I use Blender to animate vectors and abstract structures for my education channel, AlasfoorMATH, which means I don't just compute a result, I can show what it means geometrically. Outside of work, I explore the mathematics behind mechanical puzzles like the Rubik's Cube, track the night sky as an amateur astronomer, and I'm currently learning Chinese and German.</p>
+</div>
+<div>
+<h3 style="margin-bottom:16px">Certifications</h3>
+<div class="cert"><b>Data Science Bootcamp Program</b><span>General Assembly, Bahrain — Sep 2026</span></div>
+<div class="cert"><b>BSc, Mathematics</b><span>University of Bahrain — Jun 2027</span></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2>A toolkit built on mathematical foundations</h2>
+<div class="skills" style="margin-top:32px">
+<div><h3>Mathematics</h3><ul class="chips"><li>Linear Algebra</li><li>Real Analysis</li><li>Abstract Algebra</li><li>Graph Theory</li><li>Hyperbolic Geometry</li><li>3D Spatial Vector Analysis</li></ul></div>
+<div><h3>Data Science &amp; Statistics</h3><ul class="chips"><li>Data Collection &amp; Cleaning</li><li>EDA</li><li>Data Wrangling</li><li>API Integration</li><li>Data Storytelling</li><li>A/B Testing</li><li>Hypothesis Testing</li></ul></div>
+<div><h3>Machine Learning &amp; AI</h3><ul class="chips"><li>Regression &amp; Classification</li><li>Clustering</li><li>PCA</li><li>Ensemble Methods</li><li>Time Series</li><li>Recommender Systems</li><li>CNN</li><li>RNN</li><li>Transfer Learning</li><li>NLP</li><li>Transformers</li><li>LLMs</li><li>Generative AI</li></ul></div>
+<div><h3>Programming &amp; Tools</h3><ul class="chips"><li>Python</li><li>Java</li><li>MATLAB</li><li>SQL</li><li>Blender</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>Statsmodels</li><li>PyTorch</li><li>Hugging Face</li><li>LangChain</li><li>BigQuery</li><li>Git / GitHub</li></ul></div>
+<div><h3>Visualization &amp; Data Engineering</h3><ul class="chips"><li>Matplotlib</li><li>Seaborn</li><li>Tableau</li><li>Power BI</li><li>3D Visualization (Blender)</li><li>Data Modeling</li><li>ETL / ELT Pipelines</li><li>Data Lakes &amp; Warehouses</li><li>Data Governance</li><li>Model Deployment</li></ul></div>
+<div><h3>Languages</h3><ul class="chips"><li>Arabic — Native</li><li>English — Fluent</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Selected work</h2>
+<p class="lead">Applied AI and data tools, mathematics education, and foundational software engineering.</p>
+
+<article class="proj">
+<div class="shots"><img src="images/adel.png" alt="Adel chat interface in Arabic, showing a welcome message, chat history, notebooks and a question box" loading="lazy"></div>
+<div>
+<span class="date">AI project</span>
+<h3>Adel (عادل) — Bahraini Legal Assistant</h3>
+<p>An Arabic-first AI research assistant for Bahraini law. Users ask a legal question in plain language and search a knowledge base of more than 6,000 sources. It includes saved chats, searchable history, and notebooks to organize research, plus a clear reminder that results need review by a qualified lawyer.</p>
+<div class="tags"><span>Python</span><span>Streamlit</span><span>Generative AI</span></div>
+<a href="https://clb-legal-assistant.streamlit.app/">Try the live app</a>
+</div></article>
+
+<article class="proj">
+<div class="shots two"><img src="images/belkhams-home.png" alt="Belkhams home page with a cookbook overview: total recipes, fastest meal and top category" loading="lazy"><img src="images/belkhams-search.png" alt="Belkhams ingredient search showing a scrambled eggs recipe card" loading="lazy"></div>
+<div>
+<span class="date">Jun 2026</span>
+<h3>Belkhams — Recipe Organizer</h3>
+<p>An interactive Streamlit web app that lets users store, categorize, and search cooking recipes. Built filtering algorithms to sort by ingredients and preparation time behind a clean, user-friendly interface.</p>
+<div class="tags"><span>Python</span><span>Streamlit</span></div>
+</div></article>
+
+<article class="proj">
+<div class="shots"><img src="images/span.png" alt="Blender animation explaining the span of two vectors as a plane in 3D space" loading="lazy"></div>
+<div>
+<span class="date">Dec 2024 — Present</span>
+<h3>AlasfoorMATH</h3>
+<p>An educational YouTube channel teaching mathematics and linear algebra. I design and animate 3D vectors in Blender to make abstract concepts visible, and manage end-to-end video production and editing.</p>
+<div class="tags"><span>Blender</span><span>3D Animation</span><span>Video Production</span></div>
+<a href="https://youtube.com/@AlasfoorMATH">youtube.com/@AlasfoorMATH</a>
+</div></article>
+
+<article class="proj">
+<div>
+<span class="date">Nov 2023</span>
+<h3>Library Management System</h3>
+<p>A Java system for managing book inventories and user borrowings, applying Hash Maps and Linked Lists to handle fast searching and borrowing queues.</p>
+<div class="tags"><span>Java</span><span>Data Structures</span></div>
+</div></article>
+</div></section>
+
+<section id="visuals"><div class="wrap">
+<h2>3D visuals</h2>
+<p class="lead">Scenes and lessons I model, animate, and render in Blender.</p>
+<div class="gallery">
+<figure><img src="images/span.png" alt="Span of two vectors shown as a yellow plane in 3D" loading="lazy"><figcaption>Span: every linear combination of two vectors fills a plane.</figcaption></figure>
+<figure><img src="images/vectors-dependence.png" alt="Independent vectors next to dependent vectors on coordinate axes" loading="lazy"><figcaption>Independent and dependent vectors, side by side.</figcaption></figure>
+<figure><img src="images/forest.jpg" alt="Stylized 3D forest meadow with round trees, wildflowers and a bright sun" loading="lazy"><figcaption>A stylized forest meadow, built and rendered in Blender.</figcaption></figure>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let's talk about your data</h2>
+<p class="lead">Open to data science and analytics roles. Reach out by email or connect on LinkedIn and GitHub.</p>
+<a href="mailto:reemhussain757@gmail.com">reemhussain757@gmail.com</a>
+<a href="http://www.linkedin.com/in/reemalasfoor">LinkedIn</a>
+<a href="https://github.com/ReemAlasfoor">GitHub</a>
+<a href="tel:+97335029665">+973 3502 9665</a>
+</div></section>
+<footer><div class="wrap">© 2026 Reem Hussain Alasfoor</div></footer>
+</body>
+</html>
